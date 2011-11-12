@@ -14,10 +14,15 @@ $(document).ready(function(){
 	  speed: 2000
   });
   
-    // call sticky function on resize
-    $(window).resize(function() {
-      makeSticky();
-    });
+  // call sticky function on resize
+  $(window).resize(function() {
+	  makeSticky();
+  });
+  
+  $("#linkScroller").containedStickyScroll({
+	  duration: 300,
+	  closeChar: '',
+  });
  
   tempHeight = $("#footer").prev().height();
   makeSticky(); 
