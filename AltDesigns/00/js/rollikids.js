@@ -12,6 +12,11 @@ $(document).ready(function(){
     $(window).resize(function() {
       makeSticky();
     });
+    
+    $("#linkScroller").containedStickyScroll({
+  	  duration: 300,
+  	  closeChar: '',
+    });
  
   tempHeight = $("#footer").prev().height();
   makeSticky(); 
