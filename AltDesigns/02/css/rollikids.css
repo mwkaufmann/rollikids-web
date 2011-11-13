@@ -77,14 +77,14 @@ footer p {
 #menu-wrapper .link {
 	font-family: 'Arial';
 	text-align: center;
-	color: #10004d;
+	color: #008000;
 	text-shadow: white 0px 0px 3px;
 	font-size:20px;
 	border-radius: 3px;
 }
 
 #menu-wrapper .link:hover {
-	background-color: #10004d;
+	background-color: #008000;
 	color:white;
 	text-shadow: black 0px 0px 3px;
 }
