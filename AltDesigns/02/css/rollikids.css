@@ -46,7 +46,7 @@ body {
 #linkScroller .selectedLink {
 	line-height: 30px;
 	padding-left: 30px;
-	margin: 10px auto;
+	margin: 7px auto;
 	background-image: url('../img/link_selected.png');
 }
 
