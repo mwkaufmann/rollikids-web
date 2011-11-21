@@ -14,6 +14,12 @@ $(document).ready(function(){
 	  speed: 2000
   });
   
+  $('.secondlink').bind('mouseover', function(){
+	  $(this).switchClass('secondlink', 'secondlinkHover', 500);
+  }).bind('mouseout', function(){
+	  $(this).switchClass('secondlinkHover', 'secondlink', 200);
+  });
+  
     // call sticky function on resize
     $(window).resize(function() {
       makeSticky();
