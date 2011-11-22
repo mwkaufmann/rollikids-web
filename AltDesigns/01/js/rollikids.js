@@ -19,6 +19,18 @@ $(document).ready(function(){
 	  makeSticky();
   });
   
+  $('.secondlink').bind('mouseover', function(){
+	  $(this).switchClass('secondlink', 'secondlinkHover', 500);
+  }).bind('mouseout', function(){
+	  $(this).switchClass('secondlinkHover', 'secondlink', 200);
+  });
+  
+  $('#menu-wrapper .link').bind('mouseover', function(){
+	 $(this).switchClass('link', 'linkSelected', 200); 
+  }).bind('mouseout', function(){
+	  $(this).switchClass('linkSelected', 'link', 10);
+  });
+  
   $("#linkScroller").containedStickyScroll({
 	  duration: 300,
 	  closeChar: '',

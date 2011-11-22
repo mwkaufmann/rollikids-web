@@ -27,6 +27,58 @@ body {
   border: 1px solid grey;
 }
 
+#linkScroller .secondlink {
+	line-height: 30px;
+	padding-left: 0px;
+	background-color: white;
+	margin: 3px auto;
+	border-bottom: #ff8a00 1px solid;
+}
+
+#linkScroller .secondlinkHover {
+	line-height: 30px;
+	padding-left: 30px;
+	background-color: #ff8a00;
+	margin: 3px auto;
+	border-bottom: #ff8a00 1px solid;
+}
+
+#linkScroller .selectedLink {
+	line-height: 30px;
+	padding-left: 30px;
+	margin: 7px auto;
+	background-image: url('../img/link_selected.png');
+}
+
+.seperator {
+	background-image: url('../img/seperator01.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	line-height: 22px;
+	font-size: 19px;
+	width: 100%;
+	margin: 10px auto;
+	padding-left: 30px;
+}
+
+.divider {
+	background-image: url('../img/divider.png');
+	background-position: right;
+	background-repeat: no-repeat; 
+	text-align: right;
+	line-height: 57px;
+	width: 788px;
+	padding-top: 5px;
+}
+
+.divider span {
+	margin-right: 150px;
+	font-size: 19px;
+	line-height: 60px;
+	color: white;
+	text-shadow: black 1px 1px 1px;
+}
+
 #hero .span16{
   margin-left : 10px;
 }
@@ -83,10 +135,14 @@ footer p {
 	border-radius: 3px;
 }
 
-#menu-wrapper .link:hover {
+#menu-wrapper .linkSelected {
+	font-family: 'Rammetto One';
+	text-align: center;
 	background-color: #10004d;
 	color:white;
 	text-shadow: black 0px 0px 3px;
+	font-size:14px;
+	border-radius: 3px;
 }
 
 #quote {
