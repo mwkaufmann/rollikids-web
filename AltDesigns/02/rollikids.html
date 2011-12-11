@@ -50,16 +50,105 @@
             </div>
             <div class="row" id="menu">
                 <div id="menu-wrapper">
-                    <div class="span3 link">
-                        Aktuelles</div>
-                    <div class="span3 link">
-                        Bilder</div>
-                    <div class="span3 link">
-                        Langer Link</div>
-                    <div class="span3 link">
-                        Test Test Test</div>
-                    <div class="span3 link">
-                        Link1</div>
+
+
+
+<style type="text/css">
+/* menu styles */
+#jsddm
+{	margin: 0;
+	padding: 0}
+
+	#jsddm li
+	{	float: left;
+		list-style: none;
+		font: 12px Tahoma, Arial}
+
+	#jsddm li a
+	{	display: block;
+		background: #324143;
+		padding: 5px 12px;
+		text-decoration: none;
+		border-right: 1px solid white;
+		width: 70px;
+		color: #EAFFED;
+		white-space: nowrap}
+
+	#jsddm li a:hover
+	{	background: #24313C}
+		
+		#jsddm li ul
+		{	margin: 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			border-top: 1px solid white}
+		
+			#jsddm li ul li
+			{	float: none;
+				display: inline}
+			
+			#jsddm li ul li a
+			{	width: auto;
+				background: #A9C251;
+				color: #24313C}
+			
+			#jsddm li ul li a:hover
+			{	background: #8EA344}
+</style>
+
+<script type="text/javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function jsddm_open()
+{	jsddm_canceltimer();
+	jsddm_close();
+	ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');}
+
+function jsddm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+function jsddm_timer()
+{	closetimer = window.setTimeout(jsddm_close, timeout);}
+
+function jsddm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#jsddm > li').bind('mouseover', jsddm_open);
+	$('#jsddm > li').bind('mouseout',  jsddm_timer);});
+
+document.onclick = jsddm_close;
+</script>
+
+<ul id="jsddm">
+	<li><a href="#">Aktuelles</a>
+		<ul>
+			<li><a href="#">Aktuelles1</a></li>
+			<li><a href="#">Aktuelles1</a></li>
+			<li><a href="#">Aktuelles1</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Bilder</a>
+		<ul>
+			<li><a href="#">Bilder1</a></li>
+			<li><a href="#">Bilder2</a></li>
+			<li><a href="#">Bilder3</a></li>
+			<li><a href="#">Bilder4</a></li>
+			<li><a href="#">Bilder5</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Langer Link</a></li>
+	<li><a href="#">Test Test Test</a></li>
+	<li><a href="#">Link1</a></li>
+</ul>
+
+
+
                 </div>
             </div>
             <div class="row" id="content" style="clear: both; margin-top: 20px;">
