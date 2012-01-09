@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>
+  <?php print $head_title; ?></title>
+  <?php print $head; ?>
+  <?php print $styles; ?>
+</head>
+ 
+<body>
+
+<!--
+<img src="<?php print $logo; ?>"/>
+--> 
+
+<?php print $primary_link; ?>
+<br>
+<?php print $site_name; ?>
+<br>
+<br>
+<?php print $content; ?>
+<br>
+ 
+<div id="sidebar">
+  <?php print $sidebar; ?>
+</div>
+ 
+<?php print $closure; ?>
+ 
+<div id="menu">
+<?php if ($main_menu): ?>
+<div id="mainmenu"> <?php print theme( 'links__system_main_menu', array('links' => $main_menu) ); ?> </div>
+<?php endif; ?>
+</div>
+
+<?php if ($secondary_menu): ?>
+<div id="secondarymenu"> <?php print theme( 'links__system_main_menu', array('links' => $secondary_menu) ); ?> </div>
+<?php endif; ?>
+
+</body>
+</html>

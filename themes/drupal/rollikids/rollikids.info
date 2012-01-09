@@ -1,0 +1,12 @@
+name = RollikidsTheme 
+description = The official Drupal Theme for the Rollikids Website.
+core = 7.x
+engine = phptemplate
+
+stylesheets[screen][] = css/rollikids.css
+
+scripts[] = js/jquery-1.7.min.js
+scripts[] = js/jquery-ui-1.8.16.custom.min.js
+scripts[] = js/jquery-contained-sticky-scroll-min.js
+scripts[] = js/jquery.cycle.all.min.js
+scripts[] = js/rollikids.js
